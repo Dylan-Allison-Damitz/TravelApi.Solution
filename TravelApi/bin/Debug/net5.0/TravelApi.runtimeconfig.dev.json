@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/lark/.dotnet/store/|arch|/|tfm|",
+      "/Users/lark/.nuget/packages"
+    ]
+  }
+}
