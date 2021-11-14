@@ -9,5 +9,7 @@ namespace TravelApi.Models
         public string Description { get; set; }
 
         public int Rating { get; set; }
+
+        public string Review { get; set; }
     }
 }

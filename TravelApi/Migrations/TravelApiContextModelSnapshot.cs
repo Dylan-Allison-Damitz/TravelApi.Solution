@@ -37,6 +37,9 @@ namespace TravelApi.Migrations
                     b.Property<int>("Rating")
                         .HasColumnType("int");
 
+                    b.Property<string>("Review")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.HasKey("DestinationId");
 
                     b.ToTable("Destinations");
@@ -49,7 +52,8 @@ namespace TravelApi.Migrations
                             Country = "USA",
                             Description = "Giant Volcano east of Portland, OR",
                             Name = "Mt. Hood",
-                            Rating = 10
+                            Rating = 10,
+                            Review = "Highly recommend - fantastic hiking trails and skiing/snowboarding options"
                         },
                         new
                         {
@@ -58,7 +62,8 @@ namespace TravelApi.Migrations
                             Country = "USA",
                             Description = "Large Desert Canyon in Arizona",
                             Name = "Grand Canyon",
-                            Rating = 9
+                            Rating = 9,
+                            Review = "Very hot, my grandma got sunburnt"
                         },
                         new
                         {
@@ -67,7 +72,8 @@ namespace TravelApi.Migrations
                             Country = "USA",
                             Description = "Dormant Volcano with deep freshwater lake",
                             Name = "Crater Lake",
-                            Rating = 7
+                            Rating = 7,
+                            Review = "It's a lake"
                         },
                         new
                         {
@@ -76,7 +82,8 @@ namespace TravelApi.Migrations
                             Country = "USA",
                             Description = "Put in for a really awesome section of whitewater kayaking",
                             Name = "Northwestern Park",
-                            Rating = 8
+                            Rating = 8,
+                            Review = "Awesome place to put on the river"
                         },
                         new
                         {
@@ -85,7 +92,8 @@ namespace TravelApi.Migrations
                             Country = "USA",
                             Description = "Spring fed swimming hole in the middle of downtown Austin",
                             Name = "Barton Springs",
-                            Rating = 10
+                            Rating = 10,
+                            Review = "a great spot to visit on a hot day"
                         });
                 });
 #pragma warning restore 612, 618
